@@ -29,13 +29,15 @@ header {
 
 #logo__nav {
   margin-right: auto;
+  
 }
 
 .navbar-nav {
   margin: auto;
   display: flex;
-  flex-direction: row;
   gap: 10px;
+  flex-direction: row;
+  
 }
 
 .nav-item {
@@ -45,9 +47,9 @@ header {
 .nav-link {
   display: inline-block;
   position: relative;
-  width: 90px;
+  width: 70px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 
 .nav-link::after {
@@ -81,6 +83,7 @@ main {
   width: 100%;
   height: 100%;
   display: flex;
+  text-align: center;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -89,7 +92,7 @@ main {
   background-attachment: fixed;
   position: relative;
   background-repeat: no-repeat;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(../img/fundo-pets-mb-428x926.jpg);
 }
 
@@ -98,14 +101,9 @@ main {
   min-height: 71px;
   color: #313133;
   text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  -webkit-backdrop-filter: blur(13.5px);
-  border: none;
-  box-sizing: border-box;
+  background: rgba(51, 187, 105, 0.05);
+border: 2px solid #33BB69;
+ box-sizing: border-box;
   color: white;
   border-radius: 12px;
   transition: all 0.3s ease-in-out 0s;
@@ -118,8 +116,8 @@ main {
 .btn__explorar::before {
   content: "";
   border-radius: 12px;
-  min-width: calc(322px + 20px);
-  min-height: calc(71px + 20px);
+  min-width: calc(322px + 8px);
+  min-height: calc(71px + 8px);
   border: 4px solid #00ffcb;
   box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
   position: absolute;
@@ -167,8 +165,8 @@ main {
     opacity: 1;
   }
   100% {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     opacity: 0;
   }
 }
@@ -187,7 +185,7 @@ main {
 }
 .card {
   margin: auto;
-  margin-top: 20%;
+  
   border-radius: 12px;
   width: 18rem;
   display: flex;
@@ -196,9 +194,14 @@ main {
   filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
 }
 .card img {
-  border-radius: 12px 1cx2px 0 0;
+  border-radius: 12px 12px 0 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  width: 80%;
+  width: 100%;
+}
+.card img:hover
+{
+  background-color: #33BB69;
+  filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
 }
 
 .card-body {
@@ -208,16 +211,13 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.button__banner {
-  width: 322px;
-  color: white;
-  font-size: 1.2rem;
-  height: 71px;
-  background: rgba(51, 187, 105, 0.05);
-  border: 1px solid #33bb69;
-  box-sizing: border-box;
-  border-radius: 12px;
+
+.card:hover{
+  transform: scale(1.1);
+
 }
+
+
 
 .container__cards {
   width: 100%;
@@ -265,6 +265,47 @@ main {
   justify-content: space-between;
 }
 
+footer{
+  display: flex;
+  flex-direction: column;
+width: 100%;
+align-items: center;
+height: 523px;
+
+background: #171717;
+}
+
+.footer__container{
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.aluno{
+  font-size: 1rem;
+  color: white;
+  gap: 10px;
+}
+
+.aluno span{
+  opacity: 75%;
+}
+
+.aluno a{
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  opacity: 75%;
+  
+}
+.icons{
+  display: flex;
+  gap: 10px;
+}
 @media (min-width: 768px) {
   .banner {
     width: 100%;
@@ -274,7 +315,7 @@ main {
   }
   header {
     display: flex;
-    border: 2px solid red;
+    
   }
 
   nav {
@@ -288,10 +329,56 @@ main {
   .navbar-nav {
     margin: 0;
   }
+  .nav-link{
+    font-size: 0.9rem;
+  }
+  .section__cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card-deck{
+      width: 40%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: 3px solid green;
+  }
+
+  .card{
+    width: 20%;
+    border: 3px solid red;
+  }
 }
 
 @media (min-width: 1280px) {
   .nav__container {
     justify-content: flex-end;
+  }
+
+  .section__cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card-deck{
+      width: 28.3%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: 3px solid green;
+  }
+
+  .card{
+    width: 30%;
+    border: 3px solid red;
   }
 }
