@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 * {
   margin: 0;
-  padding: o;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -40,11 +40,12 @@ header {
 }
 
 .nav-item {
-  gap: 20px;
+  gap: 2rem;
   width: 100%;
 }
 
 .nav-link {
+  font-weight: 400,normal;
   display: inline-block;
   position: relative;
   width: 9rem;
@@ -57,7 +58,7 @@ header {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 3px;
+  height: .3rem;
   bottom: 0;
   left: 0;
   background-color: orange;
@@ -79,11 +80,13 @@ main {
   height: 100vh;
 }
 .banner > h1 {
+  font-weight: 900,black;
   font-size: 7.2rem;
   margin: 10px;
 }
 
 .banner > h4 {
+  font-weight: 300, lighter;
   font-size: 2.4rem;
 }
 .banner {
@@ -96,7 +99,7 @@ main {
   flex-direction: column;
   justify-content: center;
   background-size: cover;
-  gap: 20px;
+  gap: 2rem;
   background-attachment: fixed;
   position: relative;
   background-repeat: no-repeat;
@@ -106,20 +109,21 @@ main {
 
 .btn__explorar {
   font-size: 2.4rem;
+  font-weight: 400;
   letter-spacing: 6%;
-  min-width: 322px;
-  min-height: 71px;
+  min-width: 32.2rem;
+  min-height: 7.1rem ;
   text-transform: uppercase;
   background: rgba(51, 187, 105, 0.05);
   border: 1px solid #33bb69;
   box-sizing: border-box;
   color: white;
-  border-radius: 12px;
+  border-radius: 1.2rem;
   transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
   outline: none;
   position: relative;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .btn__explorar::before {
@@ -190,6 +194,7 @@ main {
 
 .section__cards > h2 {
   padding: 6rem;
+  font-weight: 900, black ;
   font-size: 6.4rem;
   text-align: center;
   color: #000000;
@@ -216,35 +221,25 @@ main {
   align-items: center;
   filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
 }
-.card img {
-  border-radius: 12px 12px 0 0;
-  position: relative;
-  width: 100%;
-  filter: 1px;
-
-  
-}
-
 .container-card__img{
   display: flex;
   flex-direction: column;
 }
 
 .card img{
+  border-radius: 12px 12px 0 0;
+  width: 100%;
   transition: all .5s;
-  border: 10px solid #eeeeee;
+  border: 1rem solid #eeeeee;
 }
 .card img:hover{
+  
   border: 10px solid #ffbb00;
   border-radius: 50%;
   -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
   filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
-  -webkit-transform: rotateZ(-360deg) scale(1.5);
-  transform: rotateZ(-360deg) scale(1.2);
-}
-
-.card img:hover{
-  
+  -webkit-transform: rotateZ(-360deg) scale(1.1);
+  transform: rotateZ(-360deg) scale(1.1);
 }
 
 .card-body {
@@ -256,68 +251,63 @@ main {
   
 }
 
-.card-body>a{
+#btn__card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: auto;
   align-self: center;
+  width: 276.46px;
+  height: 59.3px;
+  background-color: #33BB69;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 6%;
+  border-radius: 12px;
   
 } 
-.card:hover {
+
+#btn__card:hover{
   transform: scale(1.1);
 }
 
+
 .container__cards {
   width: 100%;
-
   flex-direction: column;
   display: flex;
   align-items: center;
-  border: solid 2px blue;
+  
 }
 .card__corpo {
-  width: 329px;
+  width: 32.9rem;
   display: flex;
   flex-direction: column;
-  height: 511.14px;
+  height: 51.1rem;
   background: #f4f4f4;
   border-radius: 12px;
   filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
-  border: 1px solid red;
+  
 }
-.bg__cardImg {
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background-image: url(../img/comedouro-escadinha-fundotransparente.png);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
+.card-title{
+  text-align: start;
+  font-size: 2.4rem;
+  font-weight: 700, bold;
 }
-
-.descricao {
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  width: 100%;
-  height: 100%;
-  background-color: gainsboro;
-  border-radius: 0 0 12px 12px;
+.card-text{
+  margin: 1rem;
+  font-size: 1.8rem;
+  font-weight: 300, lighter;
+  text-align: center;
+  color: #00000075;
 }
-
-.button__descricao {
-  width: 276.46px;
-  height: 59.3px;
-  border-radius: 12px;
-  justify-content: space-between;
-}
-
 footer {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
-  height: 523px;
+  height: 52.3rem;
 
   background: #171717;
 }
