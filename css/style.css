@@ -385,6 +385,10 @@ footer {
   .card-deck {
     width: 35%;
   }
+
+  footer{
+    height: 364px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -427,7 +431,7 @@ footer {
   }
 
   .section__cards > h2 {
-    padding-top: 15rem;
+    padding-top: 5rem;
   }
   .section__cards {
     display: flex;
@@ -436,7 +440,7 @@ footer {
     flex-direction: column;
   }
   .card__container {
-    width: 80%;
+    width: 90%;
     margin-bottom: 10%;
     display: flex;
     flex-direction: row;
@@ -446,8 +450,8 @@ footer {
   }
 
   .card-deck {
-    width: 28%;
-    height: 80vh;
+    width: 32%;
+    height: 65vh;
     border: 1px solid red;
   }
   .card{

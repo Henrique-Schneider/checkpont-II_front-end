@@ -110,7 +110,7 @@ form {
     
     .modal-body
     {
-        
+        width: 100%;
     }
 
         
@@ -128,7 +128,7 @@ form {
   
     .modal-dialog {
      
-        max-width: 60%;
+        max-width: 100%;
         
 
 }
