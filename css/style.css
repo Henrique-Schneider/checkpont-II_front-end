@@ -34,21 +34,27 @@ header {
 }
 
 .navbar-nav {
+  width: 100%;
+  gap: 4rem ;
   margin: auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 
 .nav-item {
-  gap: 2rem;
-  width: 100%;
+  
+  gap: 3rem;
+  width: auto;
 }
 
 .nav-link {
+  
   font-weight: 400,normal;
   display: inline-block;
   position: relative;
-  width: 9rem;
+  width: 100%;
   text-align: center;
   font-size: 2rem;
 }
@@ -67,6 +73,7 @@ header {
 }
 .nav-link:hover::after {
   transform: scaleX(1);
+  
   transform-origin: bottom left;
 }
 

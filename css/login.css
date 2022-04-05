@@ -98,7 +98,7 @@ form {
 @media (min-width: 768px){
     .modal-dialog {
         
-        max-width: 70%;
+        max-width: 50%;
          max-height: 70%;
             
     }
@@ -107,15 +107,8 @@ form {
        
        
     }
-    
-    .modal-body
-    {
-        width: 100%;
-    }
-
+       
         
-        
-}
 
 #btn__entrar
 {
@@ -128,9 +121,13 @@ form {
   
     .modal-dialog {
      
-        max-width: 100%;
+        max-width: 50%;
         
 
+}
+.modal{
+  top: 0;
+  
 }
 
 #btn__entrar
@@ -139,4 +136,4 @@ form {
 }
 
 }
-                                                             
+}
