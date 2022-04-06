@@ -204,7 +204,11 @@ main {
   font-size: 6.4rem;
   text-align: center;
   color: #000000;
-
+  text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,                    
+                1px -1px 0px #FFF,                  
+                1px 0px 0px #FFF;
   font-weight: bold;
 }
 
@@ -310,6 +314,7 @@ main {
   color: #00000075;
 }
 footer {
+  padding: 42px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -365,7 +370,7 @@ footer {
 }
 
 .direitos span{
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: #FFFFFF80;
 }
 @media (min-width: 768px) {
@@ -424,6 +429,14 @@ footer {
     justify-content: space-around;
     flex-direction: row;
   }
+
+  .direitos span{
+    font-size: 2.4rem;
+  }
+
+  .aluno:last-child .icons {
+    justify-content: end;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -479,11 +492,11 @@ footer {
   .card-deck {
     width: 32%;
     height: 65vh;
-    border: 1px solid red;
+    
   }
   .card{
     width: 100%;
-    border: 5px solid green;
+    
     height: 100%;
   }
 }
