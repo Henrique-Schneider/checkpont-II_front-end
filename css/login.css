@@ -7,15 +7,13 @@
 
 .modal-dialog {
     width: 90%;
-     margin: 0 auto;
+    margin: 0 auto;
 }
+
 .form-title{
 display: flex;
 align-items: center;
 width: 100%;
-
-
-
 
 }
 
@@ -33,7 +31,7 @@ width: 100%;
 
 .form-title>span
 {
-    position: absolute;
+position: absolute;
 width: 100%;
 text-align: center;
 border:  1px solid white;
@@ -98,8 +96,8 @@ form {
 @media (min-width: 768px){
     .modal-dialog {
         
-        max-width: 50%;
-         max-height: 70%;
+        max-width: 40%;
+        
             
     }
     .modal{
@@ -121,7 +119,8 @@ form {
   
     .modal-dialog {
      
-        max-width: 50%;
+        max-width: 30%;
+        
         
 
 }
