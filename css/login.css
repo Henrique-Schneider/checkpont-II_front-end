@@ -32,9 +32,8 @@ width: 100%;
 .form-title>span
 {
 position: absolute;
-width: 100%;
+width: 95%;
 text-align: center;
-border:  1px solid white;
 font-size: 2.4rem;
 
 }
