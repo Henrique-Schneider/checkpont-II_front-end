@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-
 }
 
 html {
   font-size: 62.5%; /*equivale a 10px ou 0.625rem*/
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -37,7 +35,7 @@ header {
 
 .navbar-nav {
   width: 100%;
-  gap: 4rem ;
+  gap: 4rem;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -46,14 +44,12 @@ header {
 }
 
 .nav-item {
-  
   gap: 3rem;
   width: auto;
 }
 
 .nav-link {
-  
-  font-weight: 400,normal;
+  font-weight: 400, normal;
   display: inline-block;
   position: relative;
   width: 100%;
@@ -66,7 +62,7 @@ header {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: .3rem;
+  height: 0.3rem;
   bottom: 0;
   left: 0;
   background-color: orange;
@@ -75,7 +71,7 @@ header {
 }
 .nav-link:hover::after {
   transform: scaleX(1);
-  
+
   transform-origin: bottom left;
 }
 
@@ -89,7 +85,7 @@ main {
   height: 100vh;
 }
 .banner > h1 {
-  font-weight: 900,black;
+  font-weight: 900, black;
   font-size: 7.2rem;
   margin: 10px;
 }
@@ -120,7 +116,7 @@ main {
   font-weight: 400;
   letter-spacing: 6%;
   min-width: 32.2rem;
-  min-height: 7.1rem ;
+  min-height: 7.1rem;
   text-transform: uppercase;
   background: rgba(51, 187, 105, 0.05);
   border: 1px solid #33bb69;
@@ -202,15 +198,12 @@ main {
 
 .section__cards > h2 {
   padding: 6rem;
-  font-weight: 900, black ;
+  font-weight: 900, black;
   font-size: 6.4rem;
   text-align: center;
   color: #000000;
-  text-shadow: 
-               -1px -1px 0px #FFF, 
-               -1px 1px 0px #FFF,                    
-                1px -1px 0px #FFF,                  
-                1px 0px 0px #FFF;
+  text-shadow: -1px -1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff,
+    1px 0px 0px #fff;
   font-weight: bold;
 }
 
@@ -234,23 +227,22 @@ main {
   align-items: center;
   filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
 }
-.container-card__img{
+.container-card__img {
   display: flex;
   flex-direction: column;
 }
 
-.card img{
+.card img {
   border-radius: 12px 12px 0 0;
   width: 100%;
-  transition: all .5s;
+  transition: all 0.5s;
   border: 1rem solid #eeeeee;
 }
-.card img:hover{
-  
+.card img:hover {
   border: 10px solid #ffbb00;
   border-radius: 50%;
-  -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
-  filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+  -webkit-filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, 0.5));
   -webkit-transform: rotateZ(-360deg) scale(1.1);
   transform: rotateZ(-360deg) scale(1.1);
 }
@@ -261,10 +253,9 @@ main {
   display: flex;
   border-radius: 0 0 12px 12px;
   flex-direction: column;
-  
 }
 
-#btn__card{
+#btn__card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,26 +263,23 @@ main {
   align-self: center;
   width: 276.46px;
   height: 59.3px;
-  background-color: #33BB69;
+  background-color: #33bb69;
   color: white;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 6%;
   border-radius: 12px;
-  
-} 
-
-#btn__card:hover{
-  transform: scale(1.1);
 }
 
+#btn__card:hover {
+  transform: scale(1.1);
+}
 
 .container__cards {
   width: 100%;
   flex-direction: column;
   display: flex;
   align-items: center;
-  
 }
 .card__corpo {
   width: 32.9rem;
@@ -301,14 +289,13 @@ main {
   background: #f4f4f4;
   border-radius: 12px;
   filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
-  
 }
-.card-title{
+.card-title {
   text-align: start;
   font-size: 2.4rem;
   font-weight: 700, bold;
 }
-.card-text{
+.card-text {
   margin: 1rem;
   font-size: 1.8rem;
   font-weight: 300, lighter;
@@ -340,9 +327,9 @@ footer {
   color: white;
   gap: 10px;
 }
-.aluno>h5{
+.aluno > h5 {
   font-size: 2.4rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .aluno span {
   font-size: 1.4rem;
@@ -361,19 +348,16 @@ footer {
   gap: 10px;
 }
 
-.direitos
-{
-  
+.direitos {
   margin-bottom: 80px;
   width: 100%;
   display: flex;
   justify-content: center;
-  
 }
 
-.direitos span{
+.direitos span {
   font-size: 1.8rem;
-  color: #FFFFFF80;
+  color: #ffffff80;
 }
 @media (min-width: 768px) {
   .banner {
@@ -385,7 +369,7 @@ footer {
     background-image: url(../img/banner-pet-H.jpg);
   }
 
-  .banner>h1{
+  .banner > h1 {
     padding: 2.2rem;
   }
   header {
@@ -403,13 +387,12 @@ footer {
 
   .section__cards > h2 {
     padding-top: 50rem;
-   
   }
 
   .card__container {
     width: 100%;
     padding-bottom: 5rem;
-   
+
     flex-direction: row;
     flex-wrap: wrap;
     gap: 6rem;
@@ -419,20 +402,18 @@ footer {
   .card-deck {
     width: 40%;
   }
-  
 
-  footer{
-    
+  footer {
     height: 364px;
   }
 
-  .footer__container{
+  .footer__container {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
   }
 
-  .direitos span{
+  .direitos span {
     font-size: 2.4rem;
   }
 
@@ -457,10 +438,8 @@ footer {
     justify-content: flex-end;
   }
 
- 
   .nav-link {
     width: auto;
-   
   }
   .nav__container {
     margin-left: auto;
@@ -469,7 +448,6 @@ footer {
   .banner {
     width: 100%;
     height: 100%;
-    
   }
 
   .section__cards > h2 {
@@ -494,9 +472,8 @@ footer {
   .card-deck {
     width: 32%;
     height: 65vh;
-    
   }
-  .card{
+  .card {
     width: 100%;
     height: 100%;
   }
